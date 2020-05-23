@@ -1,0 +1,9 @@
+- menu_name: acknowledgements
+
+- name: "Built on Foundation"
+  url: "http://foundation.zurb.com/"
+  class: "services-newsletter"
+  title: "Built on Foundation"
+  
+- name: "source theme by Phlow"
+  url: "https://phlow.github.io/feeling-responsive/"

@@ -1,0 +1,9 @@
+- name: GitHub
+  url: http://github.com/panneaux/france
+  class: icon-github
+  title: le code source
+
+#- name: YouTube
+#  url: https://www.youtube.com/channel/UCHL63OQg_yjAOw7GppwoIgQ
+#  class: icon-youtube
+#  title: "Videos"

@@ -1,0 +1,51 @@
+{% comment %}
+*
+*   This include lets you easily embed a gallery into your post.
+*   To use the gallery include you...
+*
+*   1. ...need two images: a thumbnail and a big image.
+*   2. Name the thumbnail gallery-image-thumb.jpg and...
+*   3. ...name the big gallery-image.jpg
+*   4. Define the big version in frontmatter,
+*
+*   gallery:
+*       - image_url: gallery-image.jpg
+*
+*   5. Give your image a caption – works without captions, too.
+*
+*   gallery:
+*       - image_url: gallery-image.jpg
+*          caption: Starting Page with huge One Logo
+*
+*   6. Add the include whereever you want in your content like this:
+*
+*   {% include gallery %}
+*
+*   Check out the example page › http://phlow.github.io/feeling-responsive/design/gallery/
+*
+{% endcomment %}
+{% if page.image.max %}
+<div>
+	<ul class="clearing-thumbs small-block-grid-4" data-clearing>
+    {% for i in (page.image.start..page.image.max) %}
+      {% assign daurl=page.image.base %}
+      {% if page.image.suffix %}
+          <li><a href="{{ site.urlimg }}{{ daurl }}_{{ i}}-{{ page.image.suffix }}.jpg"><img src="{{ site.urlimg }}{{ daurl }}_{{ i}}-{{ page.image.suffix }}-thumb.jpg"></a></li>
+      {% else %}
+          <li><a href="{{ site.urlimg }}{{ daurl }}_{{ i}}.jpg"><img src="{{ site.urlimg }}{{ daurl }}_{{ i}}-thumb.jpg"></a></li>
+      {% endif %}
+    {% endfor %}
+	</ul>
+</div>
+{% else %}
+<div>
+	<ul class="clearing-thumbs small-block-grid-4" data-clearing>
+		{% for item in page.gallery %}
+		{% capture url %}{{ item.image_url }}{% endcapture %}
+		{% assign split_url = url | split: '.' %}
+		{% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
+		<li><a href="{{ site.urlimg }}{{ item.image_url }}"><img {% if item.caption %}data-caption="{{ item.caption }}"{% endif %} src="{{ site.urlimg }}{{ thumb_url }}" alt="{{ item.caption }}"></a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
