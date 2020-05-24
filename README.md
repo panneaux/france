@@ -61,6 +61,44 @@ Ensuite il faut aller dans GitHub Desktop, saisir un résumé, faire `commit to 
 
 ![publication](publication.png)
 
+Pour finir, il faut mettre à jour le fichier du menu de navigation 
+
+[_data/navigation.yml](_data/navigation.yml)
+
+par exemple, si l'on crée le département du Rhone, il faudrait faire passer le menu de :
+```
+- title: A-B
+  url: "/AB"
+  side: left
+  dropdown:
+  - title: "Aisne"
+    url: "/AB/02-aisne"
+```
+
+à :
+
+```
+- title: A-B
+  url: "/AB"
+  side: left
+  dropdown:
+  - title: "Aisne"
+    url: "/AB/02-aisne"
+- title: M-R
+  url: "/MR"
+  side: left
+  dropdown:
+  - title: "Rhône"
+    url: "/MR/69-rhone"
+```
+
+en supposant que l'on ait réalisé la génération des images avec la commande :
+
+```
+traitement.bat sources/rhone MR 69-Rhone
+```
+
+
 ## pour faire fonctionner le site en local (facultatif)
 
 il faut avoir jekyll : https://blog.smarchal.com/jekyll-sous-windows
