@@ -42,7 +42,8 @@ urlimg: 'https://panneaux.github.io/france/images/'
 
 
 # Logo size is 600x80 pixels
-logo: "logo.png"
+logo: "logo.svg"
+mobile: "ville.jpg"
 
 # Plugins
 #plugins:

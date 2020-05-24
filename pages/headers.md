@@ -3,8 +3,8 @@ layout: page
 subheadline: "Header"
 title: "Style your Header!"
 teaser: "bla"
-header:
-   image_fullwidth: "header_unsplash_5.jpg"
+header: 
+  image_fullwidth: "header_unsplash_5.jpg"
 permalink: "/headers/"
 ---
 <ul>
