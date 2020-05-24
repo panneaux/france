@@ -12,7 +12,7 @@ prérequis :
 
 - il faut avoir l'utilitaire convert.exe de la suite [imagemagick](https://imagemagick.org/script/download.php). Pour l'installer : https://imagemagick.org/download/binaries/ImageMagick-7.0.10-14-Q16-x64-dll.exe
 
-- jekyll : https://blog.smarchal.com/jekyll-sous-windows
+
 
 - githubDesktop : https://desktop.github.com/
 
@@ -48,3 +48,7 @@ Ouvrez un explorateur Windows depuis le dossier `C:\Users\nom.prenom\Documents\G
 ```
 traitement.bat sources/aisne AB 02-Aisne
 ```
+
+## pour faire fonctionner le site en local (facultatif)
+
+il faut avoir jekyll : https://blog.smarchal.com/jekyll-sous-windows
