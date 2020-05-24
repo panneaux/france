@@ -55,6 +55,7 @@ celà va créer toutes les images 800x600 et les miniatures au bon endroit
 
 Ensuite il faut aller dans GitHub Desktop, saisir un résumé, faire `commit to master` et `push origin`
 
+![publication](publication.png)
 
 ## pour faire fonctionner le site en local (facultatif)
 
