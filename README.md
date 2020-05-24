@@ -42,6 +42,10 @@ On suppose que :
 
 - Vous chargez un jeu de photos dans ce dossier `sources`, au sein d'un dossier `aisne`
 
+Pour que les chose sfonctionnent correctement, il faut mettre toutes les photos en portrait dans le répertoire `aisne` et toutes les photos en paysage dans le répertoire `aisne/landscape`
+
+![landscape](landscape.png)
+
 
 Ouvrez un explorateur Windows depuis le dossier `C:\Users\nom.prenom\Documents\GitHub\france` et lancez un invité de commande msdos depuis ce dossier :
 
