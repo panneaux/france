@@ -49,6 +49,9 @@ Ouvrez un explorateur Windows depuis le dossier `C:\Users\nom.prenom\Documents\G
 traitement.bat sources/aisne AB 02-Aisne
 ```
 
+Ensuite il faut aller dans GitHub Desktop, saisir un résumé, faire `commit to master` et `fetch origin`
+
+
 ## pour faire fonctionner le site en local (facultatif)
 
 il faut avoir jekyll : https://blog.smarchal.com/jekyll-sous-windows
