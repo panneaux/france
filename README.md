@@ -60,3 +60,7 @@ Ensuite il faut aller dans GitHub Desktop, saisir un résumé, faire `commit to 
 ## pour faire fonctionner le site en local (facultatif)
 
 il faut avoir jekyll : https://blog.smarchal.com/jekyll-sous-windows
+
+```
+jekyll serve --config _config.yml,_config_dev.yml
+```
