@@ -45,9 +45,13 @@ On suppose que :
 
 Ouvrez un explorateur Windows depuis le dossier `C:\Users\nom.prenom\Documents\GitHub\france` et lancez un invité de commande msdos depuis ce dossier :
 
+![inviteMSDOS](inviteMSDOS.png)
 ```
 traitement.bat sources/aisne AB 02-Aisne
 ```
+celà va créer toutes les images 800x600 et les miniatures au bon endroit
+
+![images](images.png)
 
 Ensuite il faut aller dans GitHub Desktop, saisir un résumé, faire `commit to master` et `push origin`
 
